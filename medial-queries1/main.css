@@ -1,3 +1,31 @@
 body {
   background: blanchedalmond;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.a{
+  background-color: rgb(48, 134, 55);
+  flex-basis: 100%;
+  margin: .3%;
+}
+.b{
+  background-color: rgb(57, 48, 134);
+  flex-basis: 100%;
+  margin: .3%;
+}
+.c{
+  background-color: rgb(134, 48, 48);
+  flex-basis: 100%;
+  margin: .3%;
+}
+@media (min-width: 600px) {
+  .b {
+    flex: 4;
+  }
+  .c {
+    flex: 1;
+  }
 }

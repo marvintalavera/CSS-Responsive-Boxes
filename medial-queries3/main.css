@@ -1,3 +1,80 @@
 body {
   background: peachpuff;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.a {
+  background-color: rgb(255, 0, 0);
+  flex-basis: 100%;
+  order: 1;
+}
+.b {
+  background-color: rgb(255, 102, 0);
+  flex-basis: 33.33%;
+  order: 2;
+}
+.c {
+  background-color: rgb(255, 230, 0);
+  flex-basis: 33.33%;
+  order: 3;
+}
+.d {
+  background-color: rgb(0, 255, 0);
+  flex-basis: 33.33%;
+  order: 4;
+}
+.e {
+  background-color: rgb(0, 110, 255);
+  flex-basis: 33.33%;
+  order: 5;
+}
+.f {
+  background-color: rgb(132, 0, 255);
+  flex-basis: 33.33%;
+  order: 6;
+}
+.g {
+  background-color: rgb(247, 26, 217);
+  flex-basis: 33.33%;
+  order: 7;
+}
+.h {
+  background-color: rgb(255, 255, 255);
+  flex-basis: 100%;
+  order: 8;
+}
+@media (min-width:600px) {
+  .container {
+    display: flex;
+  }
+  .b {
+    flex-basis: 25%;
+    order: 1;
+  }
+  .c {
+    flex-basis: 25%;
+    order: 2;
+  }
+  .d {
+    flex-basis: 25%;
+    order: 3;
+  }
+  .e {
+    flex-basis: 25%;
+    order: 5;
+  }
+  .f {
+    flex-basis: 25%;
+    order: 6;
+  }
+  .g {
+    flex-basis: 25%;
+    order: 7;
+  }
+  .h {
+    flex-basis: 25%;
+    order: 4;
+  }
+}
